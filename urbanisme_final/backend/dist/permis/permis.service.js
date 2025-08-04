@@ -49,10 +49,12 @@ let PermisService = class PermisService {
             .createQueryBuilder("permi")
             .leftJoin("users", "user", "user.id = permi.id_utilisateur")
             .select([
+            "permi.id",
             "permi.piece_joint",
             "permi.permi",
             "permi.statut",
-            "user.id",
+            "permi.latitude",
+            "permi.longitude",
             "user.nom",
             "user.prenom",
             "user.adresse",

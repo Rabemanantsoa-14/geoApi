@@ -47,10 +47,12 @@ export class PermisService {
     // Ici on fait un JOIN manuel sur la table 'users' (table et colonnes)
     .leftJoin("users", "user", "user.id = permi.id_utilisateur")
     .select([
+      "permi.id",
       "permi.piece_joint",
       "permi.permi",
       "permi.statut",
-      "user.id",
+      "permi.latitude",
+      "permi.longitude",
       "user.nom",
       "user.prenom",
       "user.adresse",

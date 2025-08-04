@@ -16,6 +16,8 @@ const path_1 = require("path");
 const permis_module_1 = require("./permis/permis.module");
 const user_module_1 = require("./user/user.module");
 const notification_module_1 = require("./notification/notification.module");
+const batiment_module_1 = require("./batiment/batiment.module");
+const recuperer_zonage_module_1 = require("./recuperer_zonage/recuperer_zonage.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -39,7 +41,9 @@ exports.AppModule = AppModule = __decorate([
             }),
             permis_module_1.PermisModule,
             user_module_1.UserModule,
-            notification_module_1.NotificationModule
+            notification_module_1.NotificationModule,
+            batiment_module_1.BatimentModule,
+            recuperer_zonage_module_1.RecupererZonageModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

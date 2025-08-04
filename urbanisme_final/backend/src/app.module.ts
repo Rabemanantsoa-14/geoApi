@@ -7,6 +7,8 @@ import { join } from 'path';
 import { PermisModule } from './permis/permis.module';
 import { UserModule } from './user/user.module';
 import { NotificationModule } from './notification/notification.module';
+import { BatimentModule } from './batiment/batiment.module';
+import { RecupererZonageModule } from './recuperer_zonage/recuperer_zonage.module';
 
 @Module({
   imports: [
@@ -27,7 +29,9 @@ import { NotificationModule } from './notification/notification.module';
     }),
     PermisModule,
     UserModule,
-    NotificationModule
+    NotificationModule,
+    BatimentModule,
+    RecupererZonageModule
   ],
   controllers: [AppController],
   providers: [AppService],
